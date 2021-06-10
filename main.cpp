@@ -110,7 +110,7 @@ int main()
 
    file.close();
 
-   ofstream fr ("bandymas.txt");
+   ofstream fr ("results.txt");
 
    while(!fileStream.eof())
    {
