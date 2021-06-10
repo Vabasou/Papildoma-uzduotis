@@ -41,9 +41,9 @@ pagarba.lt
    1. Download program
    2. compile code
     
-    ```
+    
     g++ -o main.cpp
-    ```
+    
 
 ## Use
 ```
