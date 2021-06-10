@@ -167,6 +167,5 @@ int main()
    fr << "Links: " << endl;
    for(auto link : links)
       fr << link << endl;
-   fr << "veikia";
  
 }
