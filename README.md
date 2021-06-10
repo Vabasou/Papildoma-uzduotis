@@ -1,6 +1,6 @@
 # Papildoma-uzduotis
 
-###Text used for testing
+### Text used for testing
 ```
 Lietuva (oficialiai vadinama – Lietuvos Respublika (LR)) valstybė Europos centrinėje dalyje,
 Baltijos jūros pietrytinėje pakrantėje. Plotas 65 300 km².[4] Šalis ribojasi su Latvija
@@ -16,7 +16,7 @@ https://questions/
 pagarba.lt
 ```
 
-###Result
+### Result
 
 ```
 Baltijos         | times= 3| locations: 2 5 7 
@@ -37,14 +37,14 @@ https://questions
 pagarba.lt
 ```
 
-##Installation
+## Installation
     1. Download program
     2. compile code
     ```
     g++ -o main.cpp
     ```
 
-##Use
+## Use
 ```
 ./main
 ```
