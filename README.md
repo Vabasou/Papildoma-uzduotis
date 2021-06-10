@@ -38,8 +38,9 @@ pagarba.lt
 ```
 
 ## Installation
-    1. Download program
-    2. compile code
+   1. Download program
+   2. compile code
+    
     ```
     g++ -o main.cpp
     ```
