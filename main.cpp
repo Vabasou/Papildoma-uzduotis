@@ -12,7 +12,6 @@ using namespace std;
 
 const string symbols = ".,/?:;#@!$%^&*()_{}<>'[]0123456789–";
 const char theOne = '"';
-const string separation = "-_+–";
 
 void removeFrontSymbols(string &word)
 {
@@ -48,36 +47,11 @@ void removeBackSymbols(string &word)
    }
 }
 
-vector<string> separateWords (string separatableWord)
-{
-   vector<string> words;
-   for(auto separator : separation)
-   {
-      auto pos = separatableWord.find(separator);
-      if(pos != string::npos)
-      {
-         words.push_back(separatableWord.substr(0, pos));
-         words.push_back(separatableWord.substr(pos+1, separatableWord.size()));
-         break;
-      }
-   }
-   return words;
-}
-
 bool doesWordHaveDot(const string &word)
 {
    for(auto letter : word)
    {
       if(letter == '.') return true;
-   }
-   return false;
-}
-
-bool doesWordHaveSeparation(string &word)
-{
-   for(auto separator : separation)
-   {
-      if(word.find(separator) != string::npos) return true;
    }
    return false;
 }
@@ -129,12 +103,6 @@ int main()
          {
             auto temp = words.find(oneWord);
             if(isWordLink(oneWord)) links.push_back(oneWord);
-            else if(doesWordHaveSeparation(oneWord))
-            {
-               vector<string> separateWord = separateWords(oneWord);
-               for(auto word : separateWord)
-                  lineStream << word;
-            } 
             else if(temp == words.end() || words.size() == 0)
             {
                word newWord;
